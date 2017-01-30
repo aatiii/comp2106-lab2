@@ -16,6 +16,7 @@ let calculator = function(req, res, next) {
 
   let opsign = "";
   // calculate 
+  
   if (method == 'add') {
       result = x + y;
       opsign = ' + ';
@@ -33,7 +34,7 @@ let calculator = function(req, res, next) {
       opsign = " * ";
   }
   else {
-      throw new Error('Undefined method input. Please try again.');
+      res.end('<h1>Calculator</h1>' +'Invalid input.');
   }
 
   // Display the full math operation and its result on the page in this format: 
