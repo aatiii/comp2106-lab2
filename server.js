@@ -48,6 +48,6 @@ app.use('/lab2', calculator);
 app.use('/', calculator);
 
 // start the connect http server
-let port = process.env.PORT || 3000
+let port = process.env.PORT || 3000;
 app.listen(port);
 console.log('Connect server running on port 3000');
